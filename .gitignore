@@ -1,4 +1,9 @@
 npl_packages/
+Mod/
+script/
+textures/
+Model/
 build/
 bin/
+.vs/
 *.zip
