@@ -8,9 +8,12 @@ rem remove old redist folder
 rmdir Mod  /s /q
 rmdir textures  /s /q
 rmdir script  /s /q
+rmdir build  /s /q
+rmdir ParacraftBuildinMod  /s /q
 mkdir Mod
 mkdir textures
 mkdir script
+mkdir ParacraftBuildinMod
 
 pushd "npl_packages"
 
@@ -24,6 +27,22 @@ CALL :BuddlePackage ModelVoxelizer
 CALL :BuddlePackage WorldShare
 
 popd
+
+rem copy files to ParacraftBuildinMod folder for packaging
+if exist Mod ( xcopy /s /y Mod  ParacraftBuildinMod\Mod\ )
+if exist textures ( xcopy /s /y textures  ParacraftBuildinMod\textures\ )
+if exist script ( xcopy /s /y script  ParacraftBuildinMod\script\ )
+xcopy /y package.npl  ParacraftBuildinMod\
+
+Set /p tmp=Do you want to zip ParacraftBuildinMod directory (y to confirm)
+if '%tmp%'=='y' (
+	call "7z.exe" a ParacraftBuildinMod.zip ParacraftBuildinMod\
+) else (
+	pause
+	start explorer.exe "%~dp0"
+)
+
+
 
 EXIT /B %ERRORLEVEL%
 
