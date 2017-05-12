@@ -34,14 +34,8 @@ if exist textures ( xcopy /s /y textures  ParacraftBuildinMod\textures\ )
 if exist script ( xcopy /s /y script  ParacraftBuildinMod\script\ )
 xcopy /y package.npl  ParacraftBuildinMod\
 
-Set /p tmp=Do you want to zip ParacraftBuildinMod directory (y to confirm)
-if '%tmp%'=='y' (
-	call "7z.exe" a ParacraftBuildinMod.zip ParacraftBuildinMod\
-) else (
-	pause
-	start explorer.exe "%~dp0"
-)
-
+call "7z.exe" a ParacraftBuildinMod.zip ParacraftBuildinMod\
+start explorer.exe "%~dp0"
 
 
 EXIT /B %ERRORLEVEL%
