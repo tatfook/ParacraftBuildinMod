@@ -35,6 +35,7 @@ if exist script ( xcopy /s /y script  ParacraftBuildinMod\script\ )
 xcopy /y package.npl  ParacraftBuildinMod\
 
 call "7z.exe" a ParacraftBuildinMod.zip ParacraftBuildinMod\
+xcopy /y ParacraftBuildinMod.zip  ..\
 rem start explorer.exe "%~dp0"
 
 
