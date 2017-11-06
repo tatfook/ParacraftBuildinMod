@@ -11,6 +11,7 @@ CALL :InstallPackage NplCadLibrary https://github.com/NPLPackages/NplCadLibrary
 CALL :InstallPackage ModelVoxelizer https://github.com/NPLPackages/ModelVoxelizer
 
 CALL :InstallPackage WorldShare https://github.com/tatfook/WorldShare
+CALL :InstallPackage EMapMod https://github.com/tatfook/EMapMod
 
 popd
 

@@ -25,6 +25,8 @@ CALL :BuddlePackage NplCadLibrary
 CALL :BuddlePackage ModelVoxelizer
 
 CALL :BuddlePackage WorldShare
+CALL :BuddlePackage EMapMod
+
 
 popd
 
