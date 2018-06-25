@@ -26,6 +26,7 @@ CALL :BuddlePackage ModelVoxelizer
 
 CALL :BuddlePackage WorldShare
 CALL :BuddlePackage EMapMod
+CALL :BuddlePackage CodeBlockEditor
 
 
 popd
