@@ -13,6 +13,7 @@ CALL :InstallPackage ModelVoxelizer https://github.com/NPLPackages/ModelVoxelize
 CALL :InstallPackage WorldShare https://github.com/tatfook/WorldShare
 CALL :InstallPackage EMapMod https://github.com/tatfook/EMapMod
 CALL :InstallPackage CodeBlockEditor https://github.com/tatfook/CodeBlockEditor
+CALL :InstallPackage PluginBlueTooth https://github.com/NPLPackages/PluginBlueTooth
 
 popd
 

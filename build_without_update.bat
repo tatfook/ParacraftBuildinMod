@@ -14,6 +14,7 @@ mkdir Mod
 mkdir textures
 mkdir script
 mkdir ParacraftBuildinMod
+rm ParacraftBuildinMod.zip
 
 pushd "npl_packages"
 
@@ -27,6 +28,7 @@ CALL :BuddlePackage ModelVoxelizer
 CALL :BuddlePackage WorldShare
 CALL :BuddlePackage EMapMod
 CALL :BuddlePackage CodeBlockEditor
+CALL :BuddlePackage PluginBlueTooth
 
 
 popd
