@@ -10,7 +10,9 @@ rmdir textures  /s /q
 rmdir script  /s /q
 rmdir build  /s /q
 rmdir ParacraftBuildinMod  /s /q
+rmdir npl_mod  /s /q
 mkdir Mod
+mkdir npl_mod
 mkdir textures
 mkdir script
 mkdir ParacraftBuildinMod
@@ -35,6 +37,7 @@ popd
 
 rem copy files to ParacraftBuildinMod folder for packaging
 if exist Mod ( xcopy /s /y Mod  ParacraftBuildinMod\Mod\ )
+if exist npl_mod ( xcopy /s /y npl_mod  ParacraftBuildinMod\npl_mod\ )
 if exist textures ( xcopy /s /y textures  ParacraftBuildinMod\textures\ )
 if exist script ( xcopy /s /y script  ParacraftBuildinMod\script\ )
 xcopy /y package.npl  ParacraftBuildinMod\
@@ -48,11 +51,10 @@ EXIT /B %ERRORLEVEL%
 
 rem Mod, script, texture folder into root directory
 :BuddlePackage
-if exist "%1\Mod" (
     xcopy /s /y %1\Mod  %1\..\..\Mod\
+	if exist %1\Mod ( xcopy /s /y %1\Mod  %1\..\..\Mod\ )
 	if exist %1\script ( xcopy /s /y %1\script  %1\..\..\script\ )
 	if exist %1\textures ( xcopy /s /y %1\textures  %1\..\..\textures\ )
-) else (
-    echo %1 is not a mod
-)
+	if exist %1\npl_mod ( xcopy /s /y %1\npl_mod  %1\..\..\npl_mod\ )
+
 EXIT /B 0
