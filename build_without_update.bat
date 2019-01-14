@@ -32,6 +32,7 @@ CALL :BuddlePackage EMapMod
 CALL :BuddlePackage CodeBlockEditor
 CALL :BuddlePackage PluginBlueTooth
 CALL :BuddlePackage GoogleAnalytics
+CALL :BuddlePackage ParaWorldClient
 
 popd
 

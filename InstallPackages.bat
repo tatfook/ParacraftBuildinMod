@@ -15,6 +15,7 @@ CALL :InstallPackage EMapMod https://github.com/tatfook/EMapMod
 CALL :InstallPackage CodeBlockEditor https://github.com/tatfook/CodeBlockEditor
 CALL :InstallPackage PluginBlueTooth https://github.com/NPLPackages/PluginBlueTooth
 CALL :InstallPackage GoogleAnalytics https://github.com/NPLPackages/GoogleAnalytics
+CALL :InstallPackage ParaWorldClient https://github.com/tatfook/ParaworldClient
 
 popd
 
