@@ -10,6 +10,8 @@ CALL :InstallPackage NPLCAD https://github.com/tatfook/NPLCAD
 CALL :InstallPackage NplCadLibrary https://github.com/NPLPackages/NplCadLibrary
 CALL :InstallPackage ModelVoxelizer https://github.com/NPLPackages/ModelVoxelizer
 
+CALL :InstallPackage NplCad2 https://github.com/tatfook/NplCad2
+
 CALL :InstallPackage WorldShare https://github.com/tatfook/WorldShare
 CALL :InstallPackage EMapMod https://github.com/tatfook/EMapMod
 CALL :InstallPackage CodeBlockEditor https://github.com/tatfook/CodeBlockEditor

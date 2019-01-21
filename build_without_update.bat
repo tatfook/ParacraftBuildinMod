@@ -27,6 +27,8 @@ CALL :BuddlePackage NPLCAD
 CALL :BuddlePackage NplCadLibrary
 CALL :BuddlePackage ModelVoxelizer
 
+CALL :BuddlePackage NplCad2
+
 CALL :BuddlePackage WorldShare
 CALL :BuddlePackage EMapMod
 CALL :BuddlePackage CodeBlockEditor
