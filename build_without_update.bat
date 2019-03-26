@@ -28,6 +28,7 @@ CALL :BuddlePackage NplCadLibrary
 CALL :BuddlePackage ModelVoxelizer
 
 CALL :BuddlePackage NplCad2
+CALL :BuddlePackage NplBrowserScript
 
 CALL :BuddlePackage WorldShare
 CALL :BuddlePackage EMapMod
