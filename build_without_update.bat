@@ -30,6 +30,7 @@ CALL :BuddlePackage ModelVoxelizer
 CALL :BuddlePackage NplCad2
 
 CALL :BuddlePackage WorldShare
+CALL :BuddlePackage ExplorerApp
 CALL :BuddlePackage EMapMod
 CALL :BuddlePackage CodeBlockEditor
 CALL :BuddlePackage PluginBlueTooth
