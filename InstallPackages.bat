@@ -11,6 +11,7 @@ CALL :InstallPackage NplCadLibrary https://github.com/NPLPackages/NplCadLibrary
 CALL :InstallPackage ModelVoxelizer https://github.com/NPLPackages/ModelVoxelizer
 
 CALL :InstallPackage NplCad2 https://github.com/tatfook/NplCad2
+CALL :InstallPackage NplBrowserScript https://github.com/NPLPackages/NplBrowserScript
 
 CALL :InstallPackage WorldShare https://github.com/tatfook/WorldShare
 CALL :InstallPackage ExplorerApp https://github.com/tatfook/ExplorerApp
