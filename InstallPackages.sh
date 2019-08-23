@@ -35,6 +35,7 @@ InstallPackage NplCad2 https://github.com/tatfook/NplCad2
 InstallPackage NplBrowserScript https://github.com/NPLPackages/NplBrowserScript
 
 InstallPackage WorldShare https://github.com/tatfook/WorldShare
+InstallPackage ExplorerApp https://github.com/tatfook/ExplorerApp
 InstallPackage EMapMod https://github.com/tatfook/EMapMod
 InstallPackage CodeBlockEditor https://github.com/tatfook/CodeBlockEditor
 InstallPackage PluginBlueTooth https://github.com/NPLPackages/PluginBlueTooth

@@ -40,6 +40,7 @@ BuddlePackage NplCad2
 BuddlePackage NplBrowserScript
 
 BuddlePackage WorldShare
+BuddlePackage ExplorerApp
 BuddlePackage EMapMod
 BuddlePackage CodeBlockEditor
 BuddlePackage PluginBlueTooth
@@ -60,7 +61,7 @@ if  [ -d script ]; then ( cp -rf script/  ParacraftBuildinMod/script/ ) fi
 cp -f package.npl  ParacraftBuildinMod/
 
 zip -r ParacraftBuildinMod.zip ParacraftBuildinMod
-cp -rf ParacraftBuildinMod.zip  ../
+# cp -rf ParacraftBuildinMod.zip  ../
 
 
 
