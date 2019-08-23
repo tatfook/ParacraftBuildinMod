@@ -14,6 +14,7 @@ CALL :InstallPackage NplCad2 https://github.com/tatfook/NplCad2
 CALL :InstallPackage NplBrowserScript https://github.com/NPLPackages/NplBrowserScript
 
 CALL :InstallPackage WorldShare https://github.com/tatfook/WorldShare
+CALL :InstallPackage ExplorerApp https://github.com/tatfook/ExplorerApp
 CALL :InstallPackage EMapMod https://github.com/tatfook/EMapMod
 CALL :InstallPackage CodeBlockEditor https://github.com/tatfook/CodeBlockEditor
 CALL :InstallPackage PluginBlueTooth https://github.com/NPLPackages/PluginBlueTooth
