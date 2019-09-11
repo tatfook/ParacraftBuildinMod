@@ -32,7 +32,6 @@ InstallPackage NplCadLibrary https://github.com/NPLPackages/NplCadLibrary
 InstallPackage ModelVoxelizer https://github.com/NPLPackages/ModelVoxelizer
 
 InstallPackage NplCad2 https://github.com/tatfook/NplCad2
-InstallPackage NplBrowserScript https://github.com/NPLPackages/NplBrowserScript
 
 InstallPackage WorldShare https://github.com/tatfook/WorldShare
 InstallPackage ExplorerApp https://github.com/tatfook/ExplorerApp
