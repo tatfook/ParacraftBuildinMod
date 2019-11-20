@@ -41,4 +41,6 @@ InstallPackage PluginBlueTooth https://github.com/NPLPackages/PluginBlueTooth
 InstallPackage GoogleAnalytics https://github.com/NPLPackages/GoogleAnalytics
 InstallPackage ParaWorldClient https://github.com/tatfook/ParaworldClient
 
+InstallPackage PyRuntime https://github.com/tatfook/PyRuntime
+
 popd

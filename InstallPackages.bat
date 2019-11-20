@@ -20,6 +20,8 @@ CALL :InstallPackage PluginBlueTooth https://github.com/NPLPackages/PluginBlueTo
 CALL :InstallPackage GoogleAnalytics https://github.com/NPLPackages/GoogleAnalytics
 CALL :InstallPackage ParaWorldClient https://github.com/tatfook/ParaworldClient
 
+CALL :InstallPackage PyRuntime https://github.com/tatfook/PyRuntime
+
 
 popd
 

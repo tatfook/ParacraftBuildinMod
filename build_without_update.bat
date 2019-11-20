@@ -38,6 +38,8 @@ CALL :BuddlePackage PluginBlueTooth
 CALL :BuddlePackage GoogleAnalytics
 CALL :BuddlePackage ParaWorldClient
 
+CALL :BuddlePackage PyRuntime
+
 popd
 
 rem copy files to ParacraftBuildinMod folder for packaging

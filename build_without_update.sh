@@ -47,6 +47,8 @@ BuddlePackage PluginBlueTooth
 BuddlePackage GoogleAnalytics
 BuddlePackage ParaWorldClient
 
+BuddlePackage PyRuntime
+
 popd
 
 #  copy files to ParacraftBuildinMod folder for packaging
