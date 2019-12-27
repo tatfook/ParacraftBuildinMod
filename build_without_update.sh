@@ -49,6 +49,8 @@ BuddlePackage ParaWorldClient
 
 BuddlePackage PyRuntime
 
+BuddlePackage NplMicroRobot
+
 popd
 
 #  copy files to ParacraftBuildinMod folder for packaging

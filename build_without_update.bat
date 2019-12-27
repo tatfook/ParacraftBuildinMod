@@ -40,6 +40,8 @@ CALL :BuddlePackage ParaWorldClient
 
 CALL :BuddlePackage PyRuntime
 
+CALL :BuddlePackage NplMicroRobot
+
 popd
 
 rem copy files to ParacraftBuildinMod folder for packaging
