@@ -3,6 +3,8 @@ if not exist "npl_packages" ( mkdir npl_packages )
 
 pushd "npl_packages"
 
+CALL :BuddlePackage 
+CALL :InstallPackage AutoUpdater https://github.com/NPLPackages/AutoUpdater
 CALL :InstallPackage STLExporter https://github.com/LiXizhi/STLExporter
 CALL :InstallPackage BMaxToParaXExporter https://github.com/tatfook/BMaxToParaXExporter
 

@@ -20,6 +20,7 @@ rm ParacraftBuildinMod.zip
 
 pushd "npl_packages"
 
+CALL :BuddlePackage AutoUpdater
 CALL :BuddlePackage STLExporter
 CALL :BuddlePackage BMaxToParaXExporter
 

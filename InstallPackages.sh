@@ -24,6 +24,7 @@ fi
 
 pushd npl_packages
 
+InstallPackage AutoUpdater https://github.com/NPLPackages/AutoUpdater
 InstallPackage STLExporter https://github.com/LiXizhi/STLExporter
 InstallPackage BMaxToParaXExporter https://github.com/tatfook/BMaxToParaXExporter
 
