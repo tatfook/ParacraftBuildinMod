@@ -42,6 +42,7 @@ CALL :BuddlePackage ParaWorldClient
 CALL :BuddlePackage PyRuntime
 
 CALL :BuddlePackage NplMicroRobot
+CALL :BuddlePackage HaqiMod
 
 popd
 

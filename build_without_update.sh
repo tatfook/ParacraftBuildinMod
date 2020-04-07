@@ -51,6 +51,7 @@ BuddlePackage ParaWorldClient
 BuddlePackage PyRuntime
 
 BuddlePackage NplMicroRobot
+BuddlePackage HaqiMod
 
 popd
 
