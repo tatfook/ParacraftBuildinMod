@@ -45,5 +45,6 @@ InstallPackage ParaWorldClient https://github.com/tatfook/ParaworldClient
 InstallPackage PyRuntime https://github.com/tatfook/PyRuntime
 
 InstallPackage NplMicroRobot https://github.com/tatfook/NplMicroRobot
+InstallPackage HaqiMod https://github.com/tatfook/HaqiMod
 
 popd

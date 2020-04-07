@@ -25,6 +25,7 @@ CALL :InstallPackage ParaWorldClient https://github.com/tatfook/ParaworldClient
 CALL :InstallPackage PyRuntime https://github.com/tatfook/PyRuntime
 
 CALL :InstallPackage NplMicroRobot https://github.com/tatfook/NplMicroRobot
+CALL :InstallPackage HaqiMod https://github.com/tatfook/HaqiMod
 
 
 popd
