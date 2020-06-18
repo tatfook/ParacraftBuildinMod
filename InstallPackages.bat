@@ -26,7 +26,7 @@ CALL :InstallPackage PyRuntime https://github.com/tatfook/PyRuntime
 
 CALL :InstallPackage NplMicroRobot https://github.com/tatfook/NplMicroRobot
 CALL :InstallPackage HaqiMod https://github.com/tatfook/HaqiMod
-
+CALL :InstallPackage GeneralGameServerMod https://github.com/tatfook/GeneralGameServerMod
 
 popd
 

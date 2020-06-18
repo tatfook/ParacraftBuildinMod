@@ -46,5 +46,6 @@ InstallPackage PyRuntime https://github.com/tatfook/PyRuntime
 
 InstallPackage NplMicroRobot https://github.com/tatfook/NplMicroRobot
 InstallPackage HaqiMod https://github.com/tatfook/HaqiMod
+InstallPackage GeneralGameServerMod https://github.com/tatfook/GeneralGameServerMod
 
 popd

@@ -52,6 +52,7 @@ BuddlePackage PyRuntime
 
 BuddlePackage NplMicroRobot
 BuddlePackage HaqiMod
+BuddlePackage GeneralGameServerMod
 
 popd
 

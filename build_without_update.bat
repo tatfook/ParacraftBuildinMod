@@ -43,6 +43,7 @@ CALL :BuddlePackage PyRuntime
 
 CALL :BuddlePackage NplMicroRobot
 CALL :BuddlePackage HaqiMod
+CALL :BuddlePackage GeneralGameServerMod
 
 popd
 
