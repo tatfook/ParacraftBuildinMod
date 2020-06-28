@@ -6,11 +6,11 @@
 #  Mod, script, texture folder into root directory
 function BuddlePackage()
 {
-    cp -rf $1/Mod/  $1/../../Mod/
-	if  [ -d $1/Mod ]; then ( cp -rf $1/Mod/  $1/../../Mod/ ) fi
-	if  [ -d $1/script ]; then ( cp -rf $1/script/  $1/../../script/ ) fi
-	if  [ -d $1/textures ]; then ( cp -rf $1/textures/  $1/../../textures/ ) fi
-	if  [ -d $1/npl_mod ]; then ( cp -rf $1/npl_mod/  $1/../../npl_mod/ ) fi
+    #cp -rf $1/Mod/  $1/../../Mod/
+	if  [ -d $1/Mod ]; then ( cp -rf $1/Mod/*  $1/../../Mod/ ) fi
+	if  [ -d $1/script ]; then ( cp -rf $1/script/*  $1/../../script/ ) fi
+	if  [ -d $1/textures ]; then ( cp -rf $1/textures/*  $1/../../textures/ ) fi
+	if  [ -d $1/npl_mod ]; then ( cp -rf $1/npl_mod/*  $1/../../npl_mod/ ) fi
 }
 
 #  remove old redist folder
