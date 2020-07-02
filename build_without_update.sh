@@ -54,6 +54,9 @@ BuddlePackage NplMicroRobot
 BuddlePackage HaqiMod
 BuddlePackage GeneralGameServerMod
 
+BuddlePackage CodePkuCommon
+BuddlePackage CodePku
+
 popd
 
 #  copy files to ParacraftBuildinMod folder for packaging

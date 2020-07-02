@@ -45,6 +45,9 @@ CALL :BuddlePackage NplMicroRobot
 CALL :BuddlePackage HaqiMod
 CALL :BuddlePackage GeneralGameServerMod
 
+CALL :BuddlePackage CodePkuCommon
+CALL :BuddlePackage CodePku
+
 popd
 
 rem copy files to ParacraftBuildinMod folder for packaging

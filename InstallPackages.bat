@@ -28,6 +28,9 @@ CALL :InstallPackage NplMicroRobot https://github.com/tatfook/NplMicroRobot
 CALL :InstallPackage HaqiMod https://github.com/tatfook/HaqiMod
 CALL :InstallPackage GeneralGameServerMod https://github.com/tatfook/GeneralGameServerMod
 
+CALL :InstallPackage CodePkuCommon https://github.com/tatfook/codepkucommon.git
+CALL :InstallPackage CodePku https://github.com/tatfook/codepku.git
+
 popd
 
 EXIT /B %ERRORLEVEL%
