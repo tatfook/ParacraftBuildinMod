@@ -48,7 +48,7 @@ InstallPackage NplMicroRobot https://github.com/tatfook/NplMicroRobot
 InstallPackage HaqiMod https://github.com/tatfook/HaqiMod
 InstallPackage GeneralGameServerMod https://github.com/tatfook/GeneralGameServerMod
 
-InstallPackage CodePkuCommon https://github.com/tatfook/codepkucommon.git
-InstallPackage CodePku https://github.com/tatfook/codepku.git
+InstallPackage CodePkuCommon https://github.com/tatfook/CodePkuCommon.git
+InstallPackage CodePku https://github.com/tatfook/CodePku.git
 
 popd
