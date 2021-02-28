@@ -21,6 +21,7 @@ CALL :InstallPackage CodeBlockEditor https://github.com/tatfook/CodeBlockEditor
 CALL :InstallPackage PluginBlueTooth https://github.com/NPLPackages/PluginBlueTooth
 CALL :InstallPackage GoogleAnalytics https://github.com/NPLPackages/GoogleAnalytics
 CALL :InstallPackage ParaWorldClient https://github.com/tatfook/ParaworldClient
+CALL :InstallPackage Agents https://github.com/NPLPackages/Agents
 
 CALL :InstallPackage PyRuntime https://github.com/tatfook/PyRuntime
 

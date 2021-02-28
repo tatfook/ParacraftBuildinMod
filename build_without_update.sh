@@ -47,6 +47,7 @@ BuddlePackage CodeBlockEditor
 BuddlePackage PluginBlueTooth
 BuddlePackage GoogleAnalytics
 BuddlePackage ParaWorldClient
+BuddlePackage Agents
 
 BuddlePackage PyRuntime
 

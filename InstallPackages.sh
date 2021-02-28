@@ -41,6 +41,7 @@ InstallPackage CodeBlockEditor https://github.com/tatfook/CodeBlockEditor
 InstallPackage PluginBlueTooth https://github.com/NPLPackages/PluginBlueTooth
 InstallPackage GoogleAnalytics https://github.com/NPLPackages/GoogleAnalytics
 InstallPackage ParaWorldClient https://github.com/tatfook/ParaworldClient
+InstallPackage Agents https://github.com/NPLPackages/Agents
 
 InstallPackage PyRuntime https://github.com/tatfook/PyRuntime
 

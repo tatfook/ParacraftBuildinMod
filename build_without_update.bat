@@ -38,6 +38,7 @@ CALL :BuddlePackage CodeBlockEditor
 CALL :BuddlePackage PluginBlueTooth
 CALL :BuddlePackage GoogleAnalytics
 CALL :BuddlePackage ParaWorldClient
+CALL :BuddlePackage Agents
 
 CALL :BuddlePackage PyRuntime
 
