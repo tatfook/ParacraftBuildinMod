@@ -27,9 +27,11 @@ CALL :InstallPackage Agents NPLPackages/Agents
 
 CALL :InstallPackage PyRuntime tatfook/PyRuntime
 
+
 CALL :InstallPackage NplMicroRobot tatfook/NplMicroRobot
 CALL :InstallPackage HaqiMod tatfook/HaqiMod
 CALL :InstallPackage GeneralGameServerMod tatfook/GeneralGameServerMod
+CALL :InstallPackage Microbit tatfook/Microbit
 
 CALL :InstallPackage CodePkuCommon tatfook/CodePkuCommon.git
 CALL :InstallPackage CodePku tatfook/CodePku.git

@@ -51,6 +51,7 @@ InstallPackage PyRuntime tatfook/PyRuntime
 InstallPackage NplMicroRobot tatfook/NplMicroRobot
 InstallPackage HaqiMod tatfook/HaqiMod
 InstallPackage GeneralGameServerMod tatfook/GeneralGameServerMod
+InstallPackage Microbit tatfook/Microbit
 
 InstallPackage CodePkuCommon tatfook/CodePkuCommon.git
 InstallPackage CodePku tatfook/CodePku.git
