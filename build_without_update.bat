@@ -6,14 +6,14 @@ rem call InstallPackages.bat
 
 rem remove old redist folder
 rmdir Mod  /s /q
-rmdir textures  /s /q
+rmdir Texture  /s /q
 rmdir script  /s /q
 rmdir build  /s /q
 rmdir ParacraftBuildinMod  /s /q
 rmdir npl_mod  /s /q
 mkdir Mod
 mkdir npl_mod
-mkdir textures
+mkdir Texture
 mkdir script
 mkdir ParacraftBuildinMod
 rm ParacraftBuildinMod.zip
@@ -55,7 +55,7 @@ popd
 rem copy files to ParacraftBuildinMod folder for packaging
 if exist Mod ( xcopy /s /y Mod  ParacraftBuildinMod\Mod\ )
 if exist npl_mod ( xcopy /s /y npl_mod  ParacraftBuildinMod\npl_mod\ )
-if exist textures ( xcopy /s /y textures  ParacraftBuildinMod\textures\ )
+if exist Texture ( xcopy /s /y Texture  ParacraftBuildinMod\Texture\ )
 if exist script ( xcopy /s /y script  ParacraftBuildinMod\script\ )
 xcopy /y package.npl  ParacraftBuildinMod\
 
@@ -71,7 +71,7 @@ rem Mod, script, texture folder into root directory
     xcopy /s /y %1\Mod  %1\..\..\Mod\
 	if exist %1\Mod ( xcopy /s /y %1\Mod  %1\..\..\Mod\ )
 	if exist %1\script ( xcopy /s /y %1\script  %1\..\..\script\ )
-	if exist %1\textures ( xcopy /s /y %1\textures  %1\..\..\textures\ )
+	if exist %1\Texture ( xcopy /s /y %1\Texture  %1\..\..\Texture\ )
 	if exist %1\npl_mod ( xcopy /s /y %1\npl_mod  %1\..\..\npl_mod\ )
 
 EXIT /B 0
