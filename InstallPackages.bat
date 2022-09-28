@@ -3,6 +3,15 @@ if not exist "npl_packages" ( mkdir npl_packages )
 
 pushd "npl_packages"
 
+if exist WorldShare (
+     pushd WorldShare
+	 git reset --hard
+	 git pull
+	 popd
+) else (
+     git clone ssh://git@code.kp-para.cn:10022/paracraft/worldshare.git
+)
+
 REM set GitURL=https://github.com/
 set GitURL=git@github.com:
  
@@ -16,7 +25,6 @@ CALL :InstallPackage ModelVoxelizer NPLPackages/ModelVoxelizer
 
 CALL :InstallPackage NplCad2 tatfook/NplCad2
 
-CALL :InstallPackage WorldShare tatfook/WorldShare
 CALL :InstallPackage ExplorerApp tatfook/ExplorerApp
 CALL :InstallPackage EMapMod tatfook/EMapMod
 CALL :InstallPackage CodeBlockEditor tatfook/CodeBlockEditor
