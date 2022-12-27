@@ -27,6 +27,15 @@ fi
 
 pushd npl_packages
 
+if [ -f "WorldShare" ]; then
+    pushd "WorldShare"
+    git reset --hard
+    git pull
+    popd
+else
+    git clone ssh://git@code.kp-para.cn:10022/paracraft/worldshare.git
+fi
+
 InstallPackage AutoUpdater NPLPackages/AutoUpdater
 InstallPackage STLExporter LiXizhi/STLExporter
 InstallPackage BMaxToParaXExporter tatfook/BMaxToParaXExporter
@@ -37,7 +46,6 @@ InstallPackage ModelVoxelizer NPLPackages/ModelVoxelizer
 
 InstallPackage NplCad2 tatfook/NplCad2
 
-InstallPackage WorldShare tatfook/WorldShare
 InstallPackage ExplorerApp tatfook/ExplorerApp
 InstallPackage EMapMod tatfook/EMapMod
 InstallPackage CodeBlockEditor tatfook/CodeBlockEditor
