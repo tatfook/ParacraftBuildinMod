@@ -27,13 +27,13 @@ fi
 
 pushd npl_packages
 
-if [ -f "WorldShare" ]; then
+if [ -d "WorldShare" ]; then
     pushd "WorldShare"
     git reset --hard
     git pull
     popd
 else
-    git clone ssh://git@code.kp-para.cn:10022/paracraft/worldshare.git
+    git clone ssh://git@code.kp-para.cn:10022/paracraft/worldshare.git WorldShare
 fi
 
 InstallPackage AutoUpdater NPLPackages/AutoUpdater
