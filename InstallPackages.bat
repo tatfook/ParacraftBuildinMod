@@ -3,19 +3,31 @@ if not exist "npl_packages" ( mkdir npl_packages )
 
 pushd "npl_packages"
 
-if exist WorldShare (
-     pushd WorldShare
-	 git reset --hard
-	 git pull
-	 popd
-) else (
-     git clone ssh://git@code.kp-para.cn:10022/paracraft/worldshare.git
-)
+rem if exist WorldShare (
+rem      pushd WorldShare
+rem      git reset --hard
+rem      git pull
+rem      popd
+rem ) else (
+rem      git clone ssh://git@code.kp-para.cn:10022/paracraft/worldshare.git
+rem )
 
-REM set GitURL=https://github.com/
-set GitURL=git@github.com:
+REM set GitHubURL=https://github.com/
+set GitHubURL=git@github.com:
+set GitLabURL=ssh://git@code.kp-para.cn:10022/
+
+if "%1" equ "dev" (
+    CALL :InstallPackageGitLab WorldShare paracraft/worldshare.git dev
+    
+    CALL :InstallPackage AutoUpdater NPLPackages/AutoUpdater dev
+    CALL :InstallPackage GeneralGameServerMod tatfook/GeneralGameServerMod dev
+) else (
+    CALL :InstallPackageGitLab WorldShare paracraft/worldshare.git
+
+    CALL :InstallPackage AutoUpdater NPLPackages/AutoUpdater
+    CALL :InstallPackage GeneralGameServerMod tatfook/GeneralGameServerMod
+)
  
-CALL :InstallPackage AutoUpdater NPLPackages/AutoUpdater
 CALL :InstallPackage STLExporter LiXizhi/STLExporter
 CALL :InstallPackage BMaxToParaXExporter tatfook/BMaxToParaXExporter
 
@@ -38,7 +50,6 @@ CALL :InstallPackage PyRuntime tatfook/PyRuntime
 
 CALL :InstallPackage NplMicroRobot tatfook/NplMicroRobot
 CALL :InstallPackage HaqiMod tatfook/HaqiMod
-CALL :InstallPackage GeneralGameServerMod tatfook/GeneralGameServerMod
 CALL :InstallPackage Microbit tatfook/Microbit
 
 CALL :InstallPackage CodePkuCommon tatfook/CodePkuCommon.git
@@ -52,12 +63,34 @@ rem install function here
 :InstallPackage
 if exist "%1\README.md" (
     pushd %1
-	git remote set-url origin %GitURL%%2
-	git reset --hard
+    echo.
+    echo check update for: %1
+    git remote set-url origin %GitHubURL%%2
+    git reset --hard
+    if "%3" neq "" (
+        git checkout -B %3 origin/%3
+    )
     git pull
     popd
 ) else (
     rmdir /s /q "%CD%\%1"
-    git clone %GitURL%%2
+    git clone %GitHubURL%%2
 )
-EXIT /B 0
+goto:eof
+
+:InstallPackageGitLab
+if exist "%1\README.md" (
+    pushd %1
+    echo.
+    echo check update for: %1
+    git reset --hard
+    if "%3" neq "" (
+        git checkout -B %3 origin/%3
+    )
+    git pull
+    popd
+) else (
+    rmdir /s /q "%CD%\%1"
+    git clone %GitLabURL%%2
+)
+goto:eof
