@@ -4,6 +4,7 @@
 
 # GitURL=https://github.com/
 GitURL=git@github.com:
+GitLabURL=ssh://git@code.kp-para.cn:10022/
 
 # param1 is folder name
 # param2 is github url
@@ -11,13 +12,36 @@ function InstallPackage()
 {
     if [ -f "$1/README.md" ]; then
         pushd $1
-		git remote set-url origin $GitURL$2
+        git remote set-url origin $GitURL$2
         git reset --hard
+        if [ ! -z $3 ]; then
+            git checkout -B $3 origin/$3
+        fi
         git pull
         popd
     else
         rm -rf "./$1"
         git clone $GitURL$2
+    fi
+}
+
+function InstallPackageGitLab()
+{
+    if [ -f "$1/README.md" ]; then
+        pushd $1
+        echo check update for: $1
+        git reset --hard
+        if [ ! -z $3 ]; then
+            git checkout -B $3 origin/$3
+        fi
+        git pull
+        popd
+    else
+        rm -rf "./$1"
+        git clone $GitLabURL$2
+        if [ ! -z $3 ]; then
+            git checkout -B $3 origin/$3
+        fi
     fi
 }
 
@@ -27,16 +51,27 @@ fi
 
 pushd npl_packages
 
-if [ -d "WorldShare" ]; then
-    pushd "WorldShare"
-    git reset --hard
-    git pull
-    popd
+# if [ -d "WorldShare" ]; then
+#     pushd "WorldShare"
+#     git reset --hard
+#     git pull
+#     popd
+# else
+#     git clone ssh://git@code.kp-para.cn:10022/paracraft/worldshare.git WorldShare
+# fi
+
+if [ "$1" = "dev" ]; then
+    InstallPackageGitLab WorldShare paracraft/worldshare.git dev
+    
+    InstallPackage AutoUpdater NPLPackages/AutoUpdater dev
+    InstallPackage GeneralGameServerMod tatfook/GeneralGameServerMod dev
 else
-    git clone ssh://git@code.kp-para.cn:10022/paracraft/worldshare.git WorldShare
+    InstallPackageGitLab WorldShare paracraft/worldshare.git
+
+    InstallPackage AutoUpdater NPLPackages/AutoUpdater
+    InstallPackage GeneralGameServerMod tatfook/GeneralGameServerMod
 fi
 
-InstallPackage AutoUpdater NPLPackages/AutoUpdater
 InstallPackage STLExporter LiXizhi/STLExporter
 InstallPackage BMaxToParaXExporter tatfook/BMaxToParaXExporter
 
@@ -58,7 +93,7 @@ InstallPackage PyRuntime tatfook/PyRuntime
 
 InstallPackage NplMicroRobot tatfook/NplMicroRobot
 InstallPackage HaqiMod tatfook/HaqiMod
-InstallPackage GeneralGameServerMod tatfook/GeneralGameServerMod
+
 InstallPackage Microbit tatfook/Microbit
 
 InstallPackage CodePkuCommon tatfook/CodePkuCommon.git
