@@ -16,7 +16,7 @@ mkdir npl_mod
 mkdir Texture
 mkdir script
 mkdir ParacraftBuildinMod
-rm ParacraftBuildinMod.zip
+del ParacraftBuildinMod.zip
 
 pushd "npl_packages"
 
