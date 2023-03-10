@@ -5,11 +5,11 @@ pushd "npl_packages"
 
 rem if exist WorldShare (
 rem      pushd WorldShare
-rem      git reset --hard
+rem      git checkout dev
 rem      git pull
 rem      popd
 rem ) else (
-rem      git clone ssh://git@code.kp-para.cn:10022/paracraft/worldshare.git
+rem      git clone -b dev ssh://git@code.kp-para.cn:10022/paracraft/worldshare.git
 rem )
 
 REM set GitHubURL=https://github.com/
