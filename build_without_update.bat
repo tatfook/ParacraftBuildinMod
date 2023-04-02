@@ -31,7 +31,7 @@ CALL :BuddlePackage ModelVoxelizer
 CALL :BuddlePackage NplCad2
 CALL :BuddlePackage NplBrowserScript
 
-CALL :BuddlePackage WorldShare
+@REM CALL :BuddlePackage WorldShare
 CALL :BuddlePackage ExplorerApp
 CALL :BuddlePackage EMapMod
 CALL :BuddlePackage CodeBlockEditor

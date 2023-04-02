@@ -17,12 +17,12 @@ set GitHubURL=git@github.com:
 set GitLabURL=ssh://git@code.kp-para.cn:10022/
 
 if "%1" equ "dev" (
-    CALL :InstallPackageGitLab WorldShare paracraft/worldshare.git dev
+    @REM CALL :InstallPackageGitLab WorldShare paracraft/worldshare.git dev
     
     CALL :InstallPackage AutoUpdater NPLPackages/AutoUpdater dev
     CALL :InstallPackage GeneralGameServerMod tatfook/GeneralGameServerMod dev
 ) else (
-    CALL :InstallPackageGitLab WorldShare paracraft/worldshare.git master
+    @REM CALL :InstallPackageGitLab WorldShare paracraft/worldshare.git master
 
     CALL :InstallPackage AutoUpdater NPLPackages/AutoUpdater master
     CALL :InstallPackage GeneralGameServerMod tatfook/GeneralGameServerMod master

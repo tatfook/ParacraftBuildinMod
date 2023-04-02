@@ -40,7 +40,7 @@ BuddlePackage ModelVoxelizer
 BuddlePackage NplCad2
 BuddlePackage NplBrowserScript
 
-BuddlePackage WorldShare
+# BuddlePackage WorldShare
 BuddlePackage ExplorerApp
 BuddlePackage EMapMod
 BuddlePackage CodeBlockEditor
