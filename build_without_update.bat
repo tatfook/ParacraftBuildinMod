@@ -44,7 +44,7 @@ CALL :BuddlePackage PyRuntime
 
 CALL :BuddlePackage NplMicroRobot
 CALL :BuddlePackage HaqiMod
-CALL :BuddlePackage GeneralGameServerMod
+@REM CALL :BuddlePackage GeneralGameServerMod
 CALL :BuddlePackage Microbit
 
 CALL :BuddlePackage CodePkuCommon

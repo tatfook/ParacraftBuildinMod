@@ -20,12 +20,12 @@ if "%1" equ "dev" (
     @REM CALL :InstallPackageGitLab WorldShare paracraft/worldshare.git dev
     
     CALL :InstallPackage AutoUpdater NPLPackages/AutoUpdater dev
-    CALL :InstallPackage GeneralGameServerMod tatfook/GeneralGameServerMod dev
+    @REM CALL :InstallPackage GeneralGameServerMod tatfook/GeneralGameServerMod dev
 ) else (
     @REM CALL :InstallPackageGitLab WorldShare paracraft/worldshare.git master
 
     CALL :InstallPackage AutoUpdater NPLPackages/AutoUpdater master
-    CALL :InstallPackage GeneralGameServerMod tatfook/GeneralGameServerMod master
+    @REM CALL :InstallPackage GeneralGameServerMod tatfook/GeneralGameServerMod master
 )
  
 CALL :InstallPackage STLExporter LiXizhi/STLExporter

@@ -64,12 +64,12 @@ if [ "$1" = "dev" ]; then
     # InstallPackageGitLab WorldShare paracraft/worldshare.git dev
     
     InstallPackage AutoUpdater NPLPackages/AutoUpdater dev
-    InstallPackage GeneralGameServerMod tatfook/GeneralGameServerMod dev
+    # InstallPackage GeneralGameServerMod tatfook/GeneralGameServerMod dev
 else
     # InstallPackageGitLab WorldShare paracraft/worldshare.git master
 
     InstallPackage AutoUpdater NPLPackages/AutoUpdater master
-    InstallPackage GeneralGameServerMod tatfook/GeneralGameServerMod master
+    # InstallPackage GeneralGameServerMod tatfook/GeneralGameServerMod master
 fi
 
 InstallPackage STLExporter LiXizhi/STLExporter

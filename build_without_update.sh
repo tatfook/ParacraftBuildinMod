@@ -53,7 +53,7 @@ BuddlePackage PyRuntime
 
 BuddlePackage NplMicroRobot
 BuddlePackage HaqiMod
-BuddlePackage GeneralGameServerMod
+# BuddlePackage GeneralGameServerMod
 BuddlePackage Microbit
 
 BuddlePackage CodePkuCommon
