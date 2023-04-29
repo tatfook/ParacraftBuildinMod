@@ -32,7 +32,7 @@ CALL :BuddlePackage NplCad2
 CALL :BuddlePackage NplBrowserScript
 
 @REM CALL :BuddlePackage WorldShare
-CALL :BuddlePackage ExplorerApp
+@REM CALL :BuddlePackage ExplorerApp
 CALL :BuddlePackage EMapMod
 CALL :BuddlePackage CodeBlockEditor
 CALL :BuddlePackage PluginBlueTooth

@@ -41,7 +41,7 @@ BuddlePackage NplCad2
 BuddlePackage NplBrowserScript
 
 # BuddlePackage WorldShare
-BuddlePackage ExplorerApp
+# BuddlePackage ExplorerApp
 BuddlePackage EMapMod
 BuddlePackage CodeBlockEditor
 BuddlePackage PluginBlueTooth
