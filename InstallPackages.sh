@@ -81,7 +81,7 @@ InstallPackage ModelVoxelizer NPLPackages/ModelVoxelizer
 
 InstallPackage NplCad2 tatfook/NplCad2
 
-InstallPackage ExplorerApp tatfook/ExplorerApp
+# InstallPackage ExplorerApp tatfook/ExplorerApp
 InstallPackage EMapMod tatfook/EMapMod
 InstallPackage CodeBlockEditor tatfook/CodeBlockEditor
 InstallPackage PluginBlueTooth NPLPackages/PluginBlueTooth

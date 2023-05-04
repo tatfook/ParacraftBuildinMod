@@ -37,7 +37,7 @@ CALL :InstallPackage ModelVoxelizer NPLPackages/ModelVoxelizer
 
 CALL :InstallPackage NplCad2 tatfook/NplCad2
 
-CALL :InstallPackage ExplorerApp tatfook/ExplorerApp
+rem CALL :InstallPackage ExplorerApp tatfook/ExplorerApp
 CALL :InstallPackage EMapMod tatfook/EMapMod
 CALL :InstallPackage CodeBlockEditor tatfook/CodeBlockEditor
 CALL :InstallPackage PluginBlueTooth NPLPackages/PluginBlueTooth
