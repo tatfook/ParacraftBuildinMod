@@ -45,7 +45,7 @@ CALL :InstallPackage GoogleAnalytics NPLPackages/GoogleAnalytics
 CALL :InstallPackage ParaWorldClient tatfook/ParaworldClient
 CALL :InstallPackage Agents NPLPackages/Agents
 
-CALL :InstallPackage PyRuntime tatfook/PyRuntime
+rem CALL :InstallPackage PyRuntime tatfook/PyRuntime
 
 
 CALL :InstallPackage NplMicroRobot tatfook/NplMicroRobot

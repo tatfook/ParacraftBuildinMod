@@ -40,7 +40,7 @@ CALL :BuddlePackage GoogleAnalytics
 CALL :BuddlePackage ParaWorldClient
 CALL :BuddlePackage Agents
 
-CALL :BuddlePackage PyRuntime
+@REM CALL :BuddlePackage PyRuntime
 
 CALL :BuddlePackage NplMicroRobot
 CALL :BuddlePackage HaqiMod

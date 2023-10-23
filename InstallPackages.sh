@@ -89,7 +89,7 @@ InstallPackage GoogleAnalytics NPLPackages/GoogleAnalytics
 InstallPackage ParaWorldClient tatfook/ParaworldClient
 InstallPackage Agents NPLPackages/Agents
 
-InstallPackage PyRuntime tatfook/PyRuntime
+# InstallPackage PyRuntime tatfook/PyRuntime
 
 InstallPackage NplMicroRobot tatfook/NplMicroRobot
 InstallPackage HaqiMod tatfook/HaqiMod

@@ -49,7 +49,7 @@ BuddlePackage GoogleAnalytics
 BuddlePackage ParaWorldClient
 BuddlePackage Agents
 
-BuddlePackage PyRuntime
+# BuddlePackage PyRuntime
 
 BuddlePackage NplMicroRobot
 BuddlePackage HaqiMod
