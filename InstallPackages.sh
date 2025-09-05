@@ -2,8 +2,8 @@
 # author: lixizhi@yeah.net
 # date: 2019.7.25
 
-# GitURL=https://github.com/
-GitURL=git@github.com:
+GitURL=https://github.com/
+# GitURL=git@github.com:
 GitLabURL=ssh://git@code.kp-para.cn:10022/
 
 # param1 is folder name
